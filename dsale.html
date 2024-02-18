@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOHAG'S</title>
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- google font poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- tailwind custom classes -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'btn-or': '#0d0d1205',
+        }
+      }
+    }
+  }
+</script>
+
+<!-- tailwind custom styles -->
+
+<style>
+    .font-poppins{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+</head>
+<body>
+    <header>
+<!-- navbar starts here  -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-red-500">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">SHOHAG'S</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red-500">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-error">Get Ticket</a>
+        </div>
+      </div>
+      <!-- carousel section starts here  -->
+        <section >
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <div class="p-3 w-full h-28 rounded  badge-neutral text-center"><h3 class="text-xl">Meet all the heroes from the field</h3><p>A hero is an ordinary individual who finds the strength to persevere and endure in spite of overwhelming obstacles"</p></div>
+        
+
+    </header>
+    <main>
+      <!-- proffessional hockey club section starts here  -->
+        <section class="border-dotted">
+           <h3 class="sm:text-2xl lg:text-5xl sm:mt-10 lg:mt-20 font-extrabold text-center">Professional Hockeys Club</h3>
+           <p class="text-center mt-2 lg:text-xl sm:text-xs">Our Hockey's club is best service provider <br> in this country.</p>
+        </section>
+        <section class=" mt-16 grid grid-cols-1 lg:grid-cols-4 gap-10  ">
+            <div class="  text-center">
+                <div class="radial-progress text-rose-500" style="--value:87;" role="progressbar">87%</div>
+                <h4 class="font-semibold mt-5 text-center">Prayer Facility</h4>
+                <p class="text-center">We have nice furnished <br> prayer room.</p>
+            </div>
+            <div class=" text-center">
+                <div class="radial-progress text-green-400" style="--value:95;" role="progressbar">95%</div>
+                <h4 class="font-semibold mt-5 text-center">Experienced Coach</h4>
+                <p class="text-center">We have Experienced Coach <br> for coaching.</p>
+            </div>
+            <div class=" text-center">
+                <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+                <h4 class="font-semibold mt-5 text-center">Senior Player</h4>
+                <p class="text-center">Our Senior Player are <br>  very talented.</p>
+            </div>
+            <div class=" text-center">
+                <div class="radial-progress text-cyan-400" style="--value:80;" role="progressbar">80%</div>
+                <h4 class="font-semibold mt-5 text-center">Prayer Facility</h4>
+                <p class="text-center">We have nice Training Ground <br> for training.</p>
+            </div>
+        </section>
+
+        <section class=" mt-36 border-dotted">
+            <h3 class="sm:text-2xl lg:text-5xl sm:mt-20 lg:mt-20 font-extrabold text-center">Program Sections</h3>
+            <p class="text-center mt-3 lg:text-xl sm:text-xs">Our Hockey's club has best program ever <br> in this country.</p>
+         </section>
+
+         <section class=" m-4 gap-4 grid sm:grid-cols-1 lg:grid-cols-2">
+            <!-- program pic 1 -->
+            <div class=" hero h-80" style="background-image: url(Images/2.png);">
+                <div class=" rounded-xl hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                    <p class="mb-5">We welcome new players of any skill level, offer excellent coaching and regularly hold junior development opportunities.</p>
+                    <button class="btn btn-error">Get Started</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- program pic 2 -->
+            <div class="hero h-80" style="background-image: url(Images/3.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
+                    <p class="mb-5">Here are some hockey programs for teenagers:
+                      Hockey Club: Combines skills development and small-sided games. Players are divided into groups based on age and skill level.</p>
+                    <button class="btn btn-error">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+              <section class=" ">
+                   <!-- program pic 3 -->
+            <div class="w-11/12 grid m-4 hero h-80" style="background-image: url(Images/4.png); ">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-sm">
+                    <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
+                    <p class="mb-5">The 2024 season schedule includes a minimum of four games between each team, including two home games and two away games.</p>
+                    <button class="btn btn-error">Get Started</button>
+                  </div>
+                </div>
+              </div>
+              </section>
+           
+              <section class="border-dotted">
+                <h3 class="sm:text-2xl lg:text-5xl sm:mt-10 lg:mt-20 font-extrabold text-center">Our New Products</h3>
+                <p class="text-center mt-2 lg:text-xl sm:text-xs">Here are some best products for your playing aids <br> in this country.</p>
+              
+             </section>
+             
+             <section class="  m-10 gap-9 grid sm:grid-cols-1 lg:grid-cols-2">
+              <!-- our new products pic 5 -->
+              <div class="flex gap-4">
+              <div>
+                <img src="Images/5.png" alt="">
+              </div>
+
+              <div class=" ">
+              <i class="text-yellow-200 fa-solid fa-star"></i>    5.0 <i class="fa-regular fa-eye"></i> 20  <i class="fa-regular fa-heart"></i>  235
+              
+              <h4 class="font-semibold  mt-5">World Cup Flags Football</h4>
+              <p class="mt-5">We have nice Training Ground <br> for training.</p>
+              <p><span class="text-orange-600 font-extrabold">Price $ 22.00</span>   <i class="fa-solid fa-cart-shopping"></i>  Delivery Fee : Free</p>
+              </div>
+              
+             
+            </div>
+              <!-- our new products pic 6 -->
+              <div class="flex gap-4">
+              <div>
+                <img src="Images/6.png" alt="">
+              </div>
+
+              <div class="">
+              <i class="text-yellow-200 fa-solid fa-star"></i>    5.0 <i class="fa-regular fa-eye"></i> 20  <i class="fa-regular fa-heart"></i>  235
+              
+              <h4 class="font-semibold  mt-5">World Cup Flags Football</h4>
+              <p class="mt-5">We have nice Training Ground <br> for training.</p>
+              <p><span class="text-orange-600 font-extrabold">Price $ 22.00</span>   <i class="fa-solid fa-cart-shopping"></i>  Delivery Fee : Free</p>
+              </div>
+              
+             
+            </div>
+              <!-- our new products pic 7 -->
+              <div class="flex gap-4">
+              <div>
+                <img src="Images/7.png" alt="">
+              </div>
+
+              <div class="">
+              <i class="text-yellow-200 fa-solid fa-star"></i>    5.0 <i class="fa-regular fa-eye"></i> 20  <i class="fa-regular fa-heart"></i>  235
+              
+              <h4 class="font-semibold  mt-5">World Cup Flags Football</h4>
+              <p class="mt-5">We have nice Training Ground <br> for training.</p>
+              <p><span class="text-orange-600 font-extrabold">Price $ 22.00</span>   <i class="fa-solid fa-cart-shopping"></i>  Delivery Fee : Free</p>
+              </div>
+              
+             
+            </div>
+              <!-- our new products pic 8 -->
+              <div class="flex gap-4">
+              <div>
+                <img src="Images/8.png" alt="">
+              </div>
+
+              <div class="">
+              <i class="text-yellow-200 fa-solid fa-star"></i>    5.0 <i class="fa-regular fa-eye"></i> 20  <i class="fa-regular fa-heart"></i>  235
+              
+              <h4 class="font-semibold  mt-5">World Cup Flags Football</h4>
+              <p class="mt-5">We have nice Training Ground <br> for training.</p>
+              <p><span class="text-orange-600 font-extrabold">Price $ 22.00</span>   <i class="fa-solid fa-cart-shopping"></i>  Delivery Fee : Free</p>
+              </div>
+              
+             
+            </div>
+              <!-- our new products pic 9 -->
+              <div class="flex gap-4">
+              <div>
+                <img src="Images/9.png" alt="">
+              </div>
+
+              <div class="">
+              <i class="text-yellow-200 fa-solid fa-star"></i>    5.0 <i class="fa-regular fa-eye"></i> 20  <i class="fa-regular fa-heart"></i>  235
+              
+              <h4 class="font-semibold  mt-5">World Cup Flags Football</h4>
+              <p class="mt-5">We have nice Training Ground <br> for training.</p>
+              <p><span class="text-orange-600 font-extrabold">Price $ 22.00</span>   <i class="fa-solid fa-cart-shopping"></i>  Delivery Fee : Free</p>
+              </div>
+              
+             
+            </div>
+              <!-- our new products pic 10 --> 
+              <!-- sm:flex-col AND lg:flex-row DEOAR pore small e show e korena -->
+              
+              <div class="flex gap-4  "> 
+                <div>
+                  <img src="Images/10.png" alt="">
+                </div>
+
+              <div class="">
+              <i class="text-yellow-200 fa-solid fa-star"></i>    5.0 <i class="fa-regular fa-eye"></i> 20  <i class="fa-regular fa-heart"></i>  235
+              
+              <h4 class="font-semibold  mt-5">World Cup Flags Football</h4>
+              <p class="mt-5">We have nice Training Ground <br> for training.</p>
+              <p><span class="text-orange-600 font-extrabold">Price $ 22.00</span>   <i class="fa-solid fa-cart-shopping"></i>  Delivery Fee : Free</p>
+              </div>
+              
+             
+            </div>
+           
+         
+             </section>
+             <!-- clents question section starts  -->
+              <section>
+                <div class="mb-10">
+                  <h3 class="sm:text-2xl lg:text-5xl  sm:mt-10 lg:mt-20 font-extrabold text-center">Clients Question</h3>
+                <p class="text-center mt-2 lg:text-xl sm:text-xs">Here are some QNA for your <br> kind information.</p>
+                </div>
+                
+
+               
+              </section>
+             
+
+
+             
+            <section>
+              <div class="hero min-h-screen bg-base-200 mb-10">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  
+                  <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" checked="checked" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        What is the puck made of?
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>The puck is made of vulcanized rubber and is three inches in diameter and one inch thick, weighing about six ounces. It is frozen before entering play to make it bounce resistant.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Which shot is the hardest for a goalie to stop?
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>Generally speaking, it is one that’s low and to the stick side. Some goaltenders overplay to the stick side, presenting a more inviting target on the glove side.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Which is tougher for the goalie to stop a slap shot or a wrist shot?
+                      </div>
+                      <div class="collapse-content"> 
+                        <p> The slap shot, while it is harder and faster, is easier for the goalie to time than a wrist shot, which takes the goalie more by surprise.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Can the puck be kicked in for a goal?
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>Not intentionally. However, if a puck is deflected off a skate or off a player’s body and no overt attempt is made to throw it or kick it in, a goal is allowed.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Why doesn’t the referee stop fights?
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>There are several. First, it is his job to watch what is going on and determine who should be penalized. Also, it is quite hazardous in close during a fight and since he is in sole control of the game, he has to protect himself from injury.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Who gets credited for an assist?
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>The last player or players (no more than two) who touch the puck prior to the goal scorer are awarded assists. For example, if player A passes to player B who passes to player C who scores a goal; players A and B get assists.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                      
+                </div>
+              </div>
+            </section>
+
+            <!-- Get In Touch section starts here  -->
+            <section>
+              <h3 class="sm:text-2xl lg:text-5xl sm:mt-10 lg:mt-40 font-extrabold text-center">Get In Touch</h3>
+              <p class="text-center mt-2 lg:text-xl sm:text-xs">Our Hockey's club is best service provider <br> in this country.</p>
+             
+            </section>
+
+            <!-- form section starts here  -->
+            <section class="ml-4 my-20">
+              <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 row-end-auto">
+                  <div>
+                    <div class="bg-lime-50 pl-10 pt-10 h-40 mt-8 rounded-md ">
+                      <img src="Images/git1.png" alt="">
+                      <h6>Phone Number : <br> 
+                        (+62) 123-321-543</h6>
+                    </div>
+  
+                    <div class="bg-lime-50 pl-10 pt-10 h-40 mt-8 rounded-md">
+                      <img src="Images/git2.png" alt="">
+                      <h6>Email : <br>
+                        syedshohag477@gmail.com</h6>
+                    </div>
+  
+                    <div class="bg-lime-50 pl-10 pt-10 h-40 mt-8 rounded-md">
+                      <img src="Images/git3.png" alt="">
+                      <h6>Location : <br>
+                        H-92, R-19, S-11, Uttara</h6>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-2">
+                    <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                      
+                      <div>
+                        <label for="">Your Name</label>
+                        <input type="text" placeholder="Enter your full name" class="input input-bordered w-full" />
+                        
+                      </div>
+
+                      <div>
+                        <label for="">Your Email</label>
+                        <input type="email" placeholder="Enter your email" class="input input-bordered w-full" />
+                      </div>
+
+                      <div>
+                        <label for="">Subject</label>
+                        <input type="text" placeholder="Enter your subject" class="input input-bordered w-full" />
+                        
+                      </div>
+
+                      
+                      <div>
+                        <label for="">Phone Number</label>
+                        <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full" />
+                        
+                      </div>
+                      
+
+                      
+                    </div>
+                    <div class="mt-4">
+                      <label for="">Message</label>
+                      <textarea class="w-full textarea textarea-bordered" placeholder="Write your message" rows="10"></textarea>
+                      
+                    </div>
+                    <button class="mt-10 btn btn bg-red-500 lg:w-full">Send Message</button>
+                    
+                  </div>
+                 
+
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h3 class="sm:text-2xl lg:text-5xl sm:mt-10 lg:mt-20 font-extrabold text-center">Social Media</h3><br>
+                <p class="sm:text-2xl lg:text-5xl sm:mt-5 lg:mt-20 font-extrabold text-center"><i class="fa-brands fa-twitter"></i>  <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-instagram"></i>  <i class="fa-brands fa-github"></i> </p>
+
+            </section>
+             
+             
+    </main>
+    <br><br>
+    <!-- footer start here  -->
+    <footer class="footer p-10 bg-slate-800 text-base-content text-white ">
+      <aside>
+        <div class="text-center">
+          <p class="footer-title">Get In Touch </p><br/> <p>Providing reliable tech since 1992</p>
+        <p> <i class="text-red-600 fa-regular fa-envelope"></i> syedshohag477@gmail.com</p>
+        <p> <i class="text-red-600 fa-solid fa-phone"></i> (+62) 123-321-543</p>
+        </div>
+        
+      </aside> 
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Leadership</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">News & Article</a>
+        <a class="link link-hover">Legal Notice</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Support</header> 
+        <a class="link link-hover">Help Center</a>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Ticket Support</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Private Lesson</a>
+        <a class="link link-hover">Hockeys for kids</a>
+        <a class="link link-hover">Hockeys for Adult</a>
+      </nav>
+    </footer>
+    
+</body>
+</html>
